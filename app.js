@@ -1,10 +1,10 @@
-const storage = window.localStorage;
+let storage = window.localStorage;
 storage.setItem("police", 18);
 
-const storage2 = window.localStorage;
+let storage2 = window.localStorage;
 storage2.setItem("type", "Material");
 
-const storage3 = window.localStorage;
+let storage3 = window.localStorage;
 storage3.setItem("theme", "Black");
 
 let value = storage.getItem("police");
