@@ -1,11 +1,9 @@
-const storage = window.localStorage;
-storage.setItem("police", 18);
+let storage = window.localStorage;
+storage.setItem("police", "18");
 
-const storage2 = window.localStorage;
-storage2.setItem("type", "Material");
+storage.setItem("type", "Material");
 
-const storage3 = window.localStorage;
-storage3.setItem("theme", "Black");
+storage.setItem("theme", "Black");
 
 let value = storage.getItem("police");
 console.log(value);
@@ -23,10 +21,13 @@ function afficheText() {
 
 afficheText()
 
-storage.setItem("police", 32);
+storage.setItem("police", "32");
+value = storage.getItem("police");
 
-storage2.setItem("type", "Coton");
+storage.setItem("type", "Coton");
+value2 = storage.getItem("type");
 
-storage3.setItem("theme", "Red");
+storage.setItem("theme", "Red");
+value3 = storage.getItem("theme");
 
 afficheText();
